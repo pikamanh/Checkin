@@ -1,0 +1,33 @@
+Task
+- Load lại github
+- 2 màn Hình
+- Hiển thị ảnh
+- Load thêm chỗ ngồi
+- Thâm giọng nói
+- Xuất ra file excel
+    + Check in bằng tay cũng sửa thành True
+    + Điểm danh khuôn mặt cũng True
+- Scale
+
+Các phần chưa làm
+1. Vấn đề đang gặp phải
+
+1.1 Lỗi UI.
+    - Thanh trắng ở dưới                                                                            
+    - Hiện tại chỉ phóng to được, thu nhỏ là lỗi UI
+    - Chỉ phù hợp với 1 máy
+    - 2 thanh show text fix lại căn giữa
+
+2. Các vấn đề chưa làm
+    * Giao diện
+    - Chỉnh tên của trang welcome                                                    
+    - Build ui cho đẹp
+    - Khởi tạo màn hình khởi động (Lúc mới mở chương trình thì show màn hình này, khởi động xong chương trình sẽ hiện Ui detect)
+
+
+
+pip install PyQt6
+pip install "facetorch>=0.5.0" "torch==1.13.1+cu117" "torchvision==0.14.1+cu117" "torchaudio==0.13.1" --extra-index-url https://download.pytorch.org/whl/cu117
+pip uninstall numpy
+pip install numpy==1.23.0
+pip install imageio opencv-python pandas PyQt6
