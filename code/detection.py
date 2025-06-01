@@ -161,7 +161,7 @@ class faceDetection():
         db_features = torch.stack([entry['embedding'] for entry in db_entries], dim=0).T
 
         idx, acc = self.get_sim_feature_index(db_features, feature)
-        return db_entries[idx]['name'], acc
+        return db_entries[idx]['name'], db_entries[idx]['mssv'], acc
         # name = pd.read_csv(self.name_path)
         # features = torch.load(self.database_path)
         # features = features.T
@@ -207,7 +207,7 @@ class faceDetection():
                 continue
             
             imageio.imwrite(img_path, frame)
-            name, acc = self.predict_name(img_path)
+            name, mssv, acc = self.predict_name(img_path)
             if acc >= threshold:
                 print(f"Best match: {name} with similarity {acc:.2f}")
             else:
